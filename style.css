@@ -1,0 +1,301 @@
+.wrapper {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(40, 40, 40, 1);
+  color: rgba(200, 200, 200, 1);
+  font-style: normal;
+  margin: 0;
+  line-height: 2;
+}
+
+a {
+  color: rgba(200, 200, 200, 1);
+}
+
+span {
+  color: darkcyan;
+}
+
+h3 {
+  margin-bottom: 0.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  color: rgb(190, 190, 190);
+  font-variation-settings: "wght" 300;
+}
+
+p {
+  margin-top: 0;
+}
+
+.topnav img {
+  max-height: 84px;
+}
+
+header {
+  color: white;
+}
+
+section.profile {
+  text-align: center;
+  margin: 0;
+  border-radius: 0px;
+}
+
+section.Contact {
+  border-radius: 0px;
+}
+
+.profile h1 {
+  margin-top: 0;
+}
+
+.profile img {
+  max-width: 50%;
+  padding: 2rem;
+}
+
+.typing {
+  text-align: center;
+}
+
+main {
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+section {
+  border: 0px solid black;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(50, 50, 50, 1);
+}
+
+div.profiletext {
+  text-align: center;
+}
+
+.skillsIcons img {
+  box-shadow: 0 0 15px 15px rgba(250, 250, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 12px;
+  opacity: 1;
+}
+
+.Contact a {
+  display: block;
+  line-height: 2;
+}
+
+header img {
+  max-height: 70px;
+}
+
+header li {
+  color: white;
+  display: inline-flex;
+  border: 2px solid white;
+  text-decoration: none;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.skillsIcons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.skillsIcons img {
+  max-width: 50%;
+  margin: 2rem auto 2rem auto;
+}
+
+/* Style the navigation menu */
+.topnav {
+  /* overflow: hidden; */
+  background-color: rgba(40, 40, 40, 1);
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+  /* max-height: 100px; */
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Show links when toggled */
+.topnav #myLinks.show {
+  display: block;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 1rem 1rem 0;
+  text-decoration: none;
+  font-size: 24px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: none;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 40px;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  /* background-color: #ddd; */
+  color: darkcyan;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: rgba(40, 40, 40, 1);
+  color: white;
+}
+
+/* tablet view */
+@media screen and (min-width: 768px) {
+  .topnav #myLinks {
+    text-align: center;
+    display: block !important;
+  }
+
+  .topnav a.icon {
+    display: none;
+  }
+
+  .topnav a {
+    display: inline-block;
+  }
+
+  .profile img {
+    max-width: 297.5px;
+    padding: 2rem;
+  }
+
+  .skillsIcons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .skillsIcons img {
+    max-width: 50%;
+    margin: 2rem auto 2rem auto;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  section.skillsIcons {
+    padding: 0;
+  }
+}
+
+.Contact {
+  text-align: center;
+}
+
+/* desktop view */
+@media screen and (min-width: 1100px) {
+  .skillsIcons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  section .skills {
+    grid-column: 1 / 3;
+  }
+
+  section.Experience {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+  }
+
+  section.Contact {
+    grid-column: 1 / 3;
+    border-radius: 12px;
+  }
+
+  section.Contact a {
+    display: inline-block;
+    margin: 0 5rem 0 5rem;
+    padding-bottom: 5rem;
+  }
+
+  section.profile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    max-width: 1032px;
+    border-radius: 12px;
+  }
+
+  footer {
+    margin: auto;
+    max-width: 1100px;
+    border-radius: 12px;
+  }
+
+  header {
+    margin-bottom: 2rem;
+  }
+
+  .profile img {
+    margin: auto;
+  }
+
+  .profiletext {
+    text-align: left;
+    padding: 5rem 1rem 5rem 1rem;
+  }
+
+  .Contact div a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 3rem;
+    text-decoration: none;
+  }
+
+  .Contact div {
+    border-top: 1px solid darkcyan;
+  }
+  section.Contact {
+    padding: 2rem 10rem 0 10rem;
+  }
+}
