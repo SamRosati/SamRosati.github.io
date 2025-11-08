@@ -32,9 +32,12 @@ h4 {
   font-variation-settings: "wght" 300;
 }
 
+.typing {
+  font-size: 1.25rem;
+}
+
 p {
   margin-top: 0;
-  font-size: 1.25rem;
 }
 
 .topnav img {
