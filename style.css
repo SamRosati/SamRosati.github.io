@@ -34,10 +34,12 @@ h4 {
 
 p {
   margin-top: 0;
+  font-size: 1.25rem;
 }
 
 .topnav img {
   max-height: 84px;
+  max-width: 80%;
 }
 
 header {
@@ -61,6 +63,7 @@ section.Contact {
 .profile img {
   max-width: 50%;
   padding: 2rem;
+  max-width: 297.5px;
 }
 
 .typing {
@@ -199,6 +202,15 @@ h2 {
     display: inline-block;
   }
 
+  .topnav img {
+max-height: 100px;
+  }
+
+   .topnav .active {
+    display: block;
+    text-align: left;
+   }
+
   .profile img {
     max-width: 297.5px;
     padding: 2rem;
@@ -241,6 +253,14 @@ h2 {
     gap: 2rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
   }
 
   section .skills {
